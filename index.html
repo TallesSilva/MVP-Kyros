@@ -90,17 +90,17 @@
                                         <div class="dropdown-sheets">
                                             <!-- .dropdown-sheet-item -->
                                             <div class="dropdown-sheet-item">
-                                                <a href="#" class="tile-wrapper"><span class="tile tile-lg bg-indigo"><i class="oi oi-people"></i></span> <span class="tile-peek">Gerar agendamento</span></a>
+                                                <a href="#" class="tile-wrapper"><span class="tile tile-lg bg-indigo"><i class="oi oi-people"></i></span> <span class="tile-peek">Acionar Agendamento Automâtico</span></a>
                                             </div>
                                             <!-- /.dropdown-sheet-item -->
                                             <!-- .dropdown-sheet-item -->
                                             <div class="dropdown-sheet-item">
-                                                <a href="#" class="tile-wrapper"><span class="tile tile-lg bg-teal"><i class="oi oi-fork"></i></span> <span class="tile-peek">Consultar agenda</span></a>
+                                                <a href="#" class="tile-wrapper"><span class="tile tile-lg bg-teal"><i class="oi oi-fork"></i></span> <span class="tile-peek">Consultar Agenda</span></a>
                                             </div>
                                             <!-- /.dropdown-sheet-item -->
                                             <!-- .dropdown-sheet-item -->
                                             <div class="dropdown-sheet-item">
-                                                <a href="#" class="tile-wrapper"><span class="tile tile-lg bg-pink"><i class="fa fa-tasks"></i></span> <span class="tile-peek">Entrar com sua Agenda</span></a>
+                                                <a href="#" class="tile-wrapper"><span class="tile tile-lg bg-pink"><i class="fa fa-tasks"></i></span> <span class="tile-peek">Importar Backlog de Agenda</span></a>
                                             </div>
                                             <!-- /.dropdown-sheet-item -->
                                         </div>
@@ -169,7 +169,7 @@
                                     <ul class="menu">
                                         <li class="menu-subhead">Cadastros</li>
                                         <li class="menu-item">
-                                            <a href="#" class="menu-link" tabindex="-1">Clientes</a>
+                                            <a href="./clientes.html" class="menu-link" tabindex="-1">Clientes</a>
                                         </li>
                                         <li class="menu-item">
                                             <a href="#" class="menu-link" tabindex="-1">Tarefas</a>
@@ -191,13 +191,13 @@
                                     <ul class="menu">
                                         <li class="menu-subhead">Ações</li>
                                         <li class="menu-item">
-                                            <a href="#" class=" menu-link " tabindex="-1 ">Criar Agenda Automâtica</a>
+                                            <a href="#" class=" menu-link " tabindex="-1 ">Acionar Agendamento Automâtico</a>
                                         </li>
                                         <li class="menu-item ">
-                                            <a href="file:///C:/Users/tallesr/Github/MVP-Kyros/calendario.html" class=" menu-link " tabindex="-1 ">Consultar Agenda</a>
+                                            <a href="./calendario.html" class=" menu-link " tabindex="-1 ">Consultar Agenda</a>
                                         </li>
                                         <li class="menu-item ">
-                                            <a href="# " class=" menu-link " tabindex="-1 ">Entrar com sua Agenda</a>
+                                            <a href="# " class=" menu-link " tabindex="-1 ">Importar Backlog de Agenda</a>
                                         </li>
                                     </ul>
                                     <!-- /child menu -->
@@ -336,19 +336,7 @@
                                                 <div class="col ">
                                                     <!-- .metric -->
                                                     <a href="# " class="metric metric-bordered align-items-center ">
-                                                        <h2 class="metric-label "> Tarefas Ativas </h2>
-                                                        <p class="metric-value h3 ">
-                                                            <sub><i class="oi oi-fork "></i></sub> <span class="value ">12</span>
-                                                        </p>
-                                                    </a>
-                                                    <!-- /.metric -->
-                                                </div>
-                                                <!-- /metric column -->
-                                                <!-- metric column -->
-                                                <div class="col ">
-                                                    <!-- .metric -->
-                                                    <a href="# " class="metric metric-bordered align-items-center ">
-                                                        <h2 class="metric-label "> Realizadas </h2>
+                                                        <h2 class="metric-label "> Pendentes </h2>
                                                         <p class="metric-value h3 ">
                                                             <sub><i class="fa fa-tasks "></i></sub> <span class="value ">64</span>
                                                         </p>
@@ -361,7 +349,7 @@
                                                 <div class="col ">
                                                     <!-- .metric -->
                                                     <a href="# " class="metric metric-bordered align-items-center ">
-                                                        <h2 class="metric-label "> Pendentes </h2>
+                                                        <h2 class="metric-label "> Finalizadas </h2>
                                                         <p class="metric-value h3 ">
                                                             <sub><i class="fa fa-tasks "></i></sub> <span class="value ">64</span>
                                                         </p>
@@ -643,7 +631,7 @@
                                                 <div class="col ">
                                                     <!-- .metric -->
                                                     <a href="# " class="metric metric-bordered align-items-center ">
-                                                        <h2 class="metric-label "> Concluidos </h2>
+                                                        <h2 class="metric-label "> Inconclusivos </h2>
                                                         <p class="metric-value h3 ">
                                                             <sub><i class="fa fa-tasks "></i></sub> <span class="value ">64</span>
                                                         </p>
@@ -656,7 +644,19 @@
                                                 <div class="col ">
                                                     <!-- .metric -->
                                                     <a href="# " class="metric metric-bordered align-items-center ">
-                                                        <h2 class="metric-label "> Cancelados </h2>
+                                                        <h2 class="metric-label "> Cancelados pelo Cliente</h2>
+                                                        <p class="metric-value h3 ">
+                                                            <sub><i class="fa fa-tasks "></i></sub> <span class="value ">64</span>
+                                                        </p>
+                                                    </a>
+                                                    <!-- /.metric -->
+                                                </div>
+                                                <!-- /metric column -->
+                                                <!-- metric column -->
+                                                <div class="col ">
+                                                    <!-- .metric -->
+                                                    <a href="# " class="metric metric-bordered align-items-center ">
+                                                        <h2 class="metric-label "> Cancelados pelo Sistema </h2>
                                                         <p class="metric-value h3 ">
                                                             <sub><i class="fa fa-tasks "></i></sub> <span class="value ">64</span>
                                                         </p>
@@ -666,20 +666,6 @@
                                                 <!-- /metric column -->
                                             </div>
                                         </div>
-                                        <!-- metric column -->
-                                        <div class="col-lg-3 ">
-                                            <!-- .metric -->
-                                            <a href="# " class="metric metric-bordered ">
-                                                <div class="metric-badge ">
-                                                    <span class="badge badge-lg badge-success "><span class="oi oi-media-record pulse mr-1 "></span> Em execução</span>
-                                                </div>
-                                                <p class="metric-value h3 ">
-                                                    <sub><i class="oi oi-timer "></i></sub> <span class="value ">8</span>
-                                                </p>
-                                            </a>
-                                            <!-- /.metric -->
-                                        </div>
-                                        <!-- /metric column -->
                                     </div>
                                     <!-- /metric row -->
                                 </div>
