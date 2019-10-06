@@ -88,19 +88,19 @@
                                         <div class="dropdown-arrow"></div>
                                         <!-- .dropdown-sheets -->
                                         <div class="dropdown-sheets">
+                                              <!-- .dropdown-sheet-item -->
+                                              <div class="dropdown-sheet-item">
+                                                    <a href="./import-backlog.html" class="tile-wrapper"><span class="tile tile-lg bg-pink"><i class="oi oi-data-transfer-upload"></i></span> <span class="tile-peek">Importar Backlog de Agenda</span></a>
+                                                </div>
+                                                <!-- /.dropdown-sheet-item -->
                                             <!-- .dropdown-sheet-item -->
                                             <div class="dropdown-sheet-item">
-                                                <a href="#" class="tile-wrapper"><span class="tile tile-lg bg-indigo"><i class="oi oi-people"></i></span> <span class="tile-peek">Acionar Agendamento Automâtico</span></a>
+                                                <a href="#" class="tile-wrapper"><span class="tile tile-lg bg-indigo"><i class="oi oi-clock"></i></span> <span class="tile-peek">Acionar Agendamento Automâtico</span></a>
                                             </div>
                                             <!-- /.dropdown-sheet-item -->
                                             <!-- .dropdown-sheet-item -->
                                             <div class="dropdown-sheet-item">
-                                                <a href="#" class="tile-wrapper"><span class="tile tile-lg bg-teal"><i class="oi oi-fork"></i></span> <span class="tile-peek">Consultar Agenda</span></a>
-                                            </div>
-                                            <!-- /.dropdown-sheet-item -->
-                                            <!-- .dropdown-sheet-item -->
-                                            <div class="dropdown-sheet-item">
-                                                <a href="#" class="tile-wrapper"><span class="tile tile-lg bg-pink"><i class="fa fa-tasks"></i></span> <span class="tile-peek">Importar Backlog de Agenda</span></a>
+                                                <a href="./calendario.html" class="tile-wrapper"><span class="tile tile-lg bg-teal"><i class="oi oi-calendar"></i></span> <span class="tile-peek">Consultar Agenda</span></a>
                                             </div>
                                             <!-- /.dropdown-sheet-item -->
                                         </div>
@@ -190,14 +190,14 @@
                                     <!-- child menu -->
                                     <ul class="menu">
                                         <li class="menu-subhead">Ações</li>
+                                        <li class="menu-item ">
+                                            <a href="./import-backlog.html" class=" menu-link " tabindex="-1 ">Importar Backlog de Agenda</a>
+                                        </li>
                                         <li class="menu-item">
                                             <a href="#" class=" menu-link " tabindex="-1 ">Acionar Agendamento Automâtico</a>
                                         </li>
                                         <li class="menu-item ">
                                             <a href="./calendario.html" class=" menu-link " tabindex="-1 ">Consultar Agenda</a>
-                                        </li>
-                                        <li class="menu-item ">
-                                            <a href="# " class=" menu-link " tabindex="-1 ">Importar Backlog de Agenda</a>
                                         </li>
                                     </ul>
                                     <!-- /child menu -->
@@ -312,6 +312,15 @@
                                 </div>
                             </header>
                             <!-- /.page-title-bar -->
+
+                            <header class="page-title-bar " style="margin-bottom: 0px; margin-top: 20px; ">
+                                <div class="d-flex flex-column flex-md-row ">
+                                    <p class="lead " style="margin-bottom: 0px; ">
+                                        <span class="font-weight-bold ">Acompanhamento das Visitas</span>
+                                    </p>
+                                </div>
+                            </header>
+
                             <!-- .page-section -->
                             <div class="page-section ">
                                 <!-- .section-block -->
@@ -351,7 +360,7 @@
                                                     <a href="# " class="metric metric-bordered align-items-center ">
                                                         <h2 class="metric-label "> Finalizadas </h2>
                                                         <p class="metric-value h3 ">
-                                                            <sub><i class="fa fa-tasks "></i></sub> <span class="value ">64</span>
+                                                            <sub><i class="oi oi-task "></i></sub> <span class="value ">64</span>
                                                         </p>
                                                     </a>
                                                     <!-- /.metric -->
@@ -364,7 +373,7 @@
                                                     <a href="# " class="metric metric-bordered align-items-center ">
                                                         <h2 class="metric-label "> Canceladas </h2>
                                                         <p class="metric-value h3 ">
-                                                            <sub><i class="fa fa-tasks "></i></sub> <span class="value ">64</span>
+                                                            <sub><i class="oi oi-thumb-down "></i></sub> <span class="value ">64</span>
                                                         </p>
                                                     </a>
                                                     <!-- /.metric -->
@@ -398,7 +407,7 @@
                                         <div class="card card-fluid">
                                             <!-- .card-body -->
                                             <div class="card-body">
-                                                <h3 class="card-title mb-4"> Acompanhamento das Visitas </h3>
+                                                <h3 class="card-title mb-4"> Evolução das Visitas </h3>
                                                 <div class="chartjs" style="height: 292px">
                                                     <canvas id="completion-tasks"></canvas>
                                                 </div>
@@ -596,7 +605,7 @@
                                                     <a href="# " class="metric metric-bordered align-items-center ">
                                                         <h2 class="metric-label "> Backlog </h2>
                                                         <p class="metric-value h3 ">
-                                                            <sub><i class="oi oi-people "></i></sub> <span class="value ">38</span>
+                                                            <sub><i class="oi oi-list "></i></sub> <span class="value ">38</span>
                                                         </p>
                                                     </a>
                                                     <!-- /.metric -->
@@ -608,7 +617,7 @@
                                                     <a href="# " class="metric metric-bordered align-items-center ">
                                                         <h2 class="metric-label "> Confirmados </h2>
                                                         <p class="metric-value h3 ">
-                                                            <sub><i class="oi oi-fork "></i></sub> <span class="value ">12</span>
+                                                            <sub><i class="oi oi-thumb-up "></i></sub> <span class="value ">12</span>
                                                         </p>
                                                     </a>
                                                     <!-- /.metric -->
@@ -620,7 +629,7 @@
                                                     <a href="# " class="metric metric-bordered align-items-center ">
                                                         <h2 class="metric-label "> Reagendados </h2>
                                                         <p class="metric-value h3 ">
-                                                            <sub><i class="fa fa-tasks "></i></sub> <span class="value ">64</span>
+                                                            <sub><i class="oi oi-timer "></i></sub> <span class="value ">64</span>
                                                         </p>
                                                     </a>
                                                     <!-- /.metric -->
@@ -633,7 +642,7 @@
                                                     <a href="# " class="metric metric-bordered align-items-center ">
                                                         <h2 class="metric-label "> Inconclusivos </h2>
                                                         <p class="metric-value h3 ">
-                                                            <sub><i class="fa fa-tasks "></i></sub> <span class="value ">64</span>
+                                                            <sub><i class="oi oi-x "></i></sub> <span class="value ">64</span>
                                                         </p>
                                                     </a>
                                                     <!-- /.metric -->
@@ -646,7 +655,7 @@
                                                     <a href="# " class="metric metric-bordered align-items-center ">
                                                         <h2 class="metric-label "> Cancelados pelo Cliente</h2>
                                                         <p class="metric-value h3 ">
-                                                            <sub><i class="fa fa-tasks "></i></sub> <span class="value ">64</span>
+                                                            <sub><i class="oi oi-thumb-down "></i></sub> <span class="value ">64</span>
                                                         </p>
                                                     </a>
                                                     <!-- /.metric -->
@@ -658,7 +667,7 @@
                                                     <a href="# " class="metric metric-bordered align-items-center ">
                                                         <h2 class="metric-label "> Cancelados pelo Sistema </h2>
                                                         <p class="metric-value h3 ">
-                                                            <sub><i class="fa fa-tasks "></i></sub> <span class="value ">64</span>
+                                                            <sub><i class="oi oi-thumb-down "></i></sub> <span class="value ">64</span>
                                                         </p>
                                                     </a>
                                                     <!-- /.metric -->
